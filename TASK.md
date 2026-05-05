@@ -43,6 +43,10 @@
   - 저장소: `https://github.com/soleme/forgemaster`
   - 브랜치: `main`
   - 커밋: `b39695f Build Forge Master guide site`
+- Vercel 프로덕션 배포를 완료했다.
+  - 프로덕션 주소: `https://forgemaster-pi.vercel.app`
+  - 배포 URL: `https://forgemaster-a3lmhv6um-soleme-2061s-projects.vercel.app`
+  - 배포 ID: `dpl_12A2Ceco9sDzZ1onye99PY8XyZWQ`
 
 ## 현재 한계
 
@@ -53,7 +57,7 @@
 - 아직 라우트 기반 페이지 구조가 아니고, 하나의 긴 단일 페이지 앱이다.
 - 새 PDF 버전이 나왔을 때 자동으로 데이터를 추출하는 파이프라인은 없다.
 - 단위 테스트나 브라우저 스크린샷 테스트는 아직 없다.
-- GitHub Pages, Vercel, Netlify 같은 배포 설정은 아직 없다.
+- Vercel 배포는 완료됐지만, GitHub 저장소 자동 연동은 Vercel 권한 문제로 실패해 현재는 CLI 배포 방식이다.
 
 ## 다음 작업
 
@@ -101,9 +105,9 @@
    - 각 데이터 섹션에 PDF 페이지 번호를 연결
    - 각 섹션에 "원문 페이지 보기" 링크 추가
 
-8. 배포를 설정한다.
-   - GitHub Pages, Vercel, Netlify 중 하나 선택
-   - 빌드 산출물 배포 설정
+8. 배포 설정을 보강한다.
+   - Vercel 프로젝트와 GitHub 저장소 자동 연동 권한 확인
+   - Git push 시 자동 배포되도록 연결
    - `README.md`에 배포 방법 기록
 
 9. 프로젝트 문서를 추가한다.
